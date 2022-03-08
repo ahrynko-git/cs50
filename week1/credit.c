@@ -4,7 +4,6 @@
 int main(void)
 {
     int d13, d14, d15, d16, cur_digit, sum = 0;
-
     long card_number = get_long("Number: ");
 
     for (int i = 1; i <= 16; i++)
@@ -26,6 +25,7 @@ int main(void)
         }
         else
             sum += cur_digit;
+
         card_number /= 10;
     }
 
