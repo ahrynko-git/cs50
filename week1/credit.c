@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "../cs50.c"
+#include "../cs50.h"
 
 int main(void)
 {
@@ -18,6 +18,7 @@ int main(void)
         if (i % 2 == 0)
         {
             cur_digit *= 2;
+
             if (cur_digit > 9)
                 sum += cur_digit / 10 + cur_digit % 10;
             else
@@ -33,9 +34,9 @@ int main(void)
     {
         if (d13 == 4 || d16 == 4)
             printf("VISA\n");
-        else if ((d14 == 4 || d14 == 7) && d15 == 3)
+        else if (d15 == 3 && (d14 == 4 || d14 == 7))
             printf("AMEX\n");
-        else if ((d15 == 1 || d15 == 2 || d15 == 3 || d15 == 4 || d15 == 5) && d16 == 5)
+        else if (d16 == 5 && d15 >= 1 && d15 <= 5)
             printf("MASTERCARD\n");
         else
             printf("INVALID\n");
