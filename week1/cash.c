@@ -22,4 +22,6 @@ int main(void)
     change_coins += cents / 5;
 
     printf("%i\n", change_coins + cents % 5);
+
+    return 0;
 }
