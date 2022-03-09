@@ -15,11 +15,7 @@ int main(void)
     {
         n = height - i - 1;
         for (int j = 0; j < height; j++)
-<<<<<<< HEAD
-            printf(j < height - i - 1 ? " " : "#");
-=======
             printf(j < n ? ' ' : '#')
->>>>>>> 704d206... refactoring
 
         printf("  ");
 
