@@ -5,8 +5,7 @@
 int main(void)
 {
     float dollars;
-    int cents;
-    int change_coins = 0;
+    int cents, change_coins = 0;
 
     do
     {
