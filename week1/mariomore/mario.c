@@ -3,7 +3,7 @@
 
 int main(void)
 {
-    int height;
+    int height, n;
 
     do
     {
@@ -13,8 +13,13 @@ int main(void)
 
     for (int i = 0; i < height; i++)
     {
+        n = height - i - 1;
         for (int j = 0; j < height; j++)
+<<<<<<< HEAD
             printf(j < height - i - 1 ? " " : "#");
+=======
+            printf(j < n ? ' ' : '#')
+>>>>>>> 704d206... refactoring
 
         printf("  ");
 
