@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "../../cs50.h"
+#include "../../cs50.c"
 
 int main(void)
 {
@@ -15,12 +15,12 @@ int main(void)
     {
         n = height - i - 1;
         for (int j = 0; j < height; j++)
-            printf(j < n ? ' ' : '#')
+            j < n ? printf(" ") : printf("#");
 
         printf("  ");
 
         for (int j = 0; j < height; j++)
-            printf(j <= i ? "#" : " ");
+            j <= i ? printf("#") : printf(" ");
 
         printf("\n");
     }
