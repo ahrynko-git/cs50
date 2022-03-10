@@ -1,6 +1,14 @@
-# cs50
+# Harvard Computer Science Course (cs50)
+https://cs50.harvard.edu/
 
-compile:
-type and run in terminal - "clang credit.c"
+Preconditions:
+install cs50 library
+https://github.com/cs50/libcs50
 
-run: ./a.out
+Type and hit enter in Terminal
+
+Compile:
+"clang -o program program.c"
+
+Run:
+"./program"
