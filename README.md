@@ -8,7 +8,7 @@ https://github.com/cs50/libcs50
 Type and hit enter in Terminal
 
 Compile:
-"clang -o program program.c"
+"clang -lcs50 -o program program.c"
 
 Run:
 "./program"
